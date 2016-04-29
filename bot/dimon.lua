@@ -52,11 +52,11 @@ function msg_valid(msg)
   end
 
   -- Before bot was started
-  if msg.date < now then
-    print('\27[36mNot valid: old msg\27[39m')
-    return false
-  end
-
+  --if msg.date < now then
+   -- print('\27[36mNot valid: old msg\27[39m')
+    --return false
+ -- end
+--
   if msg.unread == 0 then
     print('\27[36mNot valid: readed\27[39m')
     return false
@@ -72,11 +72,11 @@ function msg_valid(msg)
     return false
   end
 
-  if msg.from.id == our_id then
-    print('\27[36mNot valid: Msg from our id\27[39m')
-    return false
-  end
-
+ -- if msg.from.id == our_id then
+   -- print('\27[36mNot valid: Msg from our id\27[39m')
+   -- return false
+  --end
+--
   if msg.to.type == 'encr_chat' then
     print('\27[36mNot valid: Encrypted chat\27[39m')
     return false
@@ -226,31 +226,29 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {129315952,132970804,146480433,0,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
-An advance Administration bot based on yagop/telegram-bot 
+    about_text = [[TeleSpeed version 2
 
-https://github.com/SEEDTEAM/TeleSeed
 
-Our team!
-Alphonse (@Iwals)
-I M /-\ N (@Imandaneshi)
-Siyanew (@Siyanew)
-Rondoozle (@Potus)
-Seyedan (@Seyedan25)
+ Powere
+ @mohamadtictic Mohamad
 
-Special thanks to:
-Juan Potato
-Siyanew
-Topkecleon
-Vamptacus
+   sudo
+    @mohamadtictic Mohamad 
+    @no_install Amir Hossein
+                                                 
 
-Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
-]],
+    Special Thanks to 
+     @no_install Amir Hossein
+                                               
+    create lGego 
+    @Mega_TELESPEED Mohamad
+     admin 
+    @Dr_VIRUS Efran
+     chanel
+	 @TeleSpeedTG]],
     help_text_realm = [[
 Realm Commands:
 
@@ -324,110 +322,123 @@ This command will send text to [group_id]
 
 ]],
     help_text = [[
-Commands list :
+لیست دستورات فارسی تل اسپید 
 
 !kick [username|id]
-You can also do it by reply
+براي کيک کردن فرد از گروه 
 
 !ban [ username|id]
-You can also do it by reply
+براي بن کردن فرد از گروه
 
 !unban [id]
-You can also do it by reply
+آن بن سازی فرد
+*براي هر سه امکان بالا ميتوانيد از ريپلاي هم استفاده کنيد*
 
 !who
-Members list
+دريافت ليست اعضا به صورت فايل
+
+!wholist
+دريافت ليست اعضا به صورت مسيج
 
 !modlist
-Moderators list
+دريافت ليست مديريت گروه
 
 !promote [username]
-Promote someone
+برای ارتقای فرد به مدیر
 
 !demote [username]
-Demote someone
+گرفتن مقام مدیر
 
 !kickme
-Will kick user
+براي کيک کردن خود از گروه 
 
 !about
-Group description
+براي دريافت توضيحات گروه
 
 !setphoto
-Set and locks group photo
+براي تنظيم عکس و قفل کردن آن
 
 !setname [name]
-Set group name
+براي تنظيم اسم گروه و قفل کردن آن
 
 !rules
-Group rules
+قوانین گروه
 
 !id
-Return group id or user id
+براي دريافت ايدي يوزر و ایدی گروه 
 
 !help
-Get commands list
+راهنمای دستورات به زبان انگلیسی
 
-!lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
+!lock [member|name|bots]
+قفل کردن اعضا و نام و بات 
 
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
+!unlock [member|name|photo|bots]
+بازکردن قفل اعضا نام و عکس گروه و بات
 
-!set rules [text]
-Set [text] as rules
+!set rules <text>
+براي تنظيم قانون براي گروه
 
-!set about [text]
-Set [text] as about
+!set about <text>
+براي تنظيم توضيح براي گروه
 
 !settings
-Returns group settings
+براي دريافت تنظيمات گروه
 
 !newlink
-Create/revoke your group link
+براي ساخت/تعويض لينک گروه
 
 !link
-Returns group link
+براي دريافت لينک گروه
 
 !owner
-Returns group owner id
+براي دريافت اونر گروه 
 
 !setowner [id]
-Will set id as owner
+براي تنظيم اونرگروه
 
 !setflood [value]
-Set [value] as flood sensitivity
+براي تنظيم حداقل فلود اسپم
 
 !stats
-Simple message statistics
+براي گرفتن آمار پیام های ارسالی گروه به صورت فایل متنی
+!statslist
+براي گرفتن آمار پیام های ارسالی گروه به صورت پیام
 
-!save [value] [text]
-Save [text] as [value]
+!save [value] <text>
+برای ذخیره یک متن
 
 !get [value]
-Returns text of [value]
+برای دریافت متن
 
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+براي پاک کردن قوانين،توضيح و مدير هاي گروه
 
 !res [username]
-Returns user id
+براي دريافت ايدي يوزر
+"!res @username"
 
 !log
-Will return group logs
+دریافت  اخرین دستورات وارد شده در گروه
 
 !banlist
-Will return group ban list
+برای دریافت لیست بن شده های گروه
 
-» U can use both "/" and "!" 
+!all
+برای دریافت تمامی اطلاعات گروه 
 
-» Only mods, owner and admin can add bots in group
+**شما میتوانید استفاده  کنید از "/" و "!" 
 
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
 
-» Only owner can use res,setowner,promote,demote and log commands
+*تنها اونر ها و مدير هاي گروه ميتوانند ربات ادد کنند
 
-]]
+
+*تنها اونر ها و مدير ها ميتوانند از کيک،بن،ان بن،لينک حديد،قفل عکس،اعضا و نام گروه و برداشتن قفل عکس،اعضا و نام گروه،استفاده  کنند وقوانين ،توضيحات و تنظيمات گروه را تغییر دهند
+
+*تنها اونر ها میتوانند از res,setowner,promote,demote andو log استفاده کنند
+
+ایدی چنل
+@TeleSpeedTG]],
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
