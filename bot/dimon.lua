@@ -226,31 +226,23 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {129315952,132970804,146480433,0,0,tonumber(our_id)},--Sudo users
+    sudo_users = {142266345},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[TeleSpeed version 2
+    about_text = [[Dimon version 2
 
 
  Powere
- @mohamadtictic Mohamad
+ @no_install
 
    sudo
-    @mohamadtictic Mohamad 
-    @no_install Amir Hossein
+    @no_install Amir mahdi
                                                  
-
-    Special Thanks to 
-     @no_install Amir Hossein
-                                               
-    create lGego 
-    @Mega_TELESPEED Mohamad
-     admin 
-    @Dr_VIRUS Efran
+                                          
      chanel
-	 @TeleSpeedTG]],
+	 @team_dimon]],
     help_text_realm = [[
-Realm Commands:
+Realm Commands DiMoN:
 
 !creategroup [name]
 Create a group
@@ -438,7 +430,8 @@ This command will send text to [group_id]
 *تنها اونر ها میتوانند از res,setowner,promote,demote andو log استفاده کنند
 
 ایدی چنل
-@TeleSpeedTG]],
+@team_dimon
+]],
   }
   serialize_to_file(config, './data/config.lua')
   print('saved config into ./data/config.lua')
