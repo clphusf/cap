@@ -30,8 +30,11 @@ local function run(msg, matches)
 end
 
 return {
+  usage ={
+    "get [Value]: If You Save A Value Can Get It.",
+    },
   patterns = {
-    "^([!/]get) (.+)$"
+    "^([Gg]et) (.+)$"
   },
   run = run
 }

@@ -77,11 +77,15 @@ end
 end
 
 return {
+	usage ={
+		"chats: Return List Of Groups.",
+		"join [id]: Bot Add You In Groups.",
+		},
     patterns = {
-      "^[/!](chats)$",
-      "^[/!](chatlist)$",
-      "^[/!](join) (.*)$",
-      "^[/!](kickme) (.*)$",
+      "^(chats)$",
+      "^(chatlist)$",
+      "^(join) (.*)$",
+      "^(kickme) (.*)$",
       "^!!tgservice (chat_add_user)$"
     },
     run = run,

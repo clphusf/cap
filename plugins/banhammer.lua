@@ -131,7 +131,7 @@ local function run(msg, matches)
     elseif matches[1]:lower() == 'id' then
       local name = user_print_name(msg.from)
       savelog(msg.to.id, name.." ["..msg.from.id.."] used /id ")
-      return "ًں’­#ط¢غŒط¯غŒ > "..msg.from.id.."\nًں‘پâ€چًں—¨#ظ†ط§ظ…_ع¯ط±ظˆظ‡ > "..msg.to.title.."\nًں’­#ظ†ط§ظ…_ط´ظ…ط§ > "..(msg.from.first_name or '').."\nًں‘پâ€چًں—¨#ظ†ط§ظ…_ط§ظˆظ„ > "..(msg.from.first_name or '').."\nًں’­#ظ†ط§ظ…_ط¢ط®ط± > "..(msg.from.last_name or '').."\nًں‘پâ€چًں—¨#ط¢غŒط¯غŒ > "..msg.from.id.."\nًں’­#غŒظˆط²ط±ظ†غŒظ… > @"..(msg.from.username or '').."\nًں‘پâ€چًں—¨#ط´ظ…ط§ط±_طھظ„ظپظ† > "..(msg.from.phone or '').."+"  
+      return "💭#آیدی > "..msg.from.id.."\n👁‍🗨#نام_گروه > "..msg.to.title.."\n💭#نام_شما > "..(msg.from.first_name or '').."\n👁‍🗨#نام_اول > "..(msg.from.first_name or '').."\n💭#نام_آخر > "..(msg.from.last_name or '').."\n👁‍🗨#آیدی > "..msg.from.id.."\n💭#یوزرنیم > @"..(msg.from.username or '').."\n👁‍🗨#شمار_تلفن > "..(msg.from.phone or '').."+"  
     end
   end
   if matches[1]:lower() == 'kickme' then-- /kickme

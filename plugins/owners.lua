@@ -8,7 +8,7 @@ local function lock_group_namemod(msg, data, target)
   else
     data[tostring(target)]['settings']['lock_name'] = 'yes'
     save_data(_config.moderation.data, data)
-    rename_chat('chat#id'..target, group_name_set, ok_cb, false)
+    rename_chat('channel#id'..target, group_name_set, ok_cb, false)
   return 'Group name has been locked'
   end
 end
@@ -293,7 +293,7 @@ local function run(msg, matches)
       data[tostring(matches[2])]['settings']['set_name'] = new_name
       save_data(_config.moderation.data, data)
       local group_name_set = data[tostring(matches[2])]['settings']['set_name']
-      local to_rename = 'chat#id'..matches[2]
+      local to_rename = 'channel#id'..matches[2]
       local name = user_print_name(msg.from)
       savelog(matches[2], "Group {}  name changed to [ "..new_name.." ] by "..name.." ["..msg.from.id.."]")
       rename_chat(to_rename, group_name_set, ok_cb, false)
@@ -306,11 +306,11 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-    "^[!/]owners (%d+) ([^%s]+) (.*)$",
-    "^[!/]owners (%d+) ([^%s]+)$",
-    "^[!/](changeabout) (%d+) (.*)$",
-    "^[!/](changerules) (%d+) (.*)$",
-    "^[!/](changename) (%d+) (.*)$",
+    "^owners (%d+) ([^%s]+) (.*)$",
+    "^owners (%d+) ([^%s]+)$",
+    "^(changeabout) (%d+) (.*)$",
+    "^(changerules) (%d+) (.*)$",
+    "^(changename) (%d+) (.*)$",
 		"^[!/](loggroup) (%d+)$"
   },
   run = run
