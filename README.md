@@ -1,4 +1,4 @@
-# [TeleSeed](https://telegram.me/TeleSeed)
+# [Dimon](https://telegram.me/Thisisamirhos3in)
 
 [![Join the chat at https://gitter.im/SEEDTEAM/TeleSeed](https://badges.gitter.im/SEEDTEAM/TeleSeed.svg)](https://gitter.im/SEEDTEAM/TeleSeed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -436,12 +436,18 @@ _Sudo users and admins can also use this commands in all groups_
 # Install dependencies.
 # Tested on Ubuntu 14.04. For other OSs, check out https://github.com/yagop/telegram-bot/wiki/Installation
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make autoconf unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev tmux subversion
+
 
 # Let's install the bot.
 cd $HOME
 git clone https://github.com/SEEDTEAM/TeleSeed.git
 cd TeleSeed
 chmod +x launch.sh
+chmod +x luarocks
+./luarocks.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
 ```
