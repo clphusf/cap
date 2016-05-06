@@ -313,110 +313,110 @@ This command will send text to [group_id]
 » Only owner can use res,setowner,promote,demote and log commands
 
 ]],
-    help_text = [[
-لیست دستورات فارسی تل اسپید 
+    help_text = 
+ لیست دستورات فارسی تله دیمون  
 
-!kick [username|id]
+🔷!kick [username|id]
 براي کيک کردن فرد از گروه 
 
-!ban [ username|id]
+🔶!ban [ username|id]
 براي بن کردن فرد از گروه
 
-!unban [id]
+🔷!unban [id]
 آن بن سازی فرد
 *براي هر سه امکان بالا ميتوانيد از ريپلاي هم استفاده کنيد*
 
-!who
+🔶!who
 دريافت ليست اعضا به صورت فايل
 
-!wholist
+🔷!wholist
 دريافت ليست اعضا به صورت مسيج
 
-!modlist
+🔶!modlist
 دريافت ليست مديريت گروه
 
-!promote [username]
+🔷!promote [username]
 برای ارتقای فرد به مدیر
 
-!demote [username]
+🔶!demote [username]
 گرفتن مقام مدیر
 
-!kickme
+🔷!kickme
 براي کيک کردن خود از گروه 
 
-!about
+🔶!about
 براي دريافت توضيحات گروه
 
-!setphoto
+🔷!setphoto
 براي تنظيم عکس و قفل کردن آن
 
-!setname [name]
+🔶!setname [name]
 براي تنظيم اسم گروه و قفل کردن آن
 
-!rules
+🔷!rules
 قوانین گروه
 
-!id
+🔶!id
 براي دريافت ايدي يوزر و ایدی گروه 
 
-!help
+🔷!help
 راهنمای دستورات به زبان انگلیسی
 
-!lock [member|name|bots]
+🔶!lock [member|name|bots]
 قفل کردن اعضا و نام و بات 
 
-!unlock [member|name|photo|bots]
+🔷!unlock [member|name|photo|bots]
 بازکردن قفل اعضا نام و عکس گروه و بات
 
-!set rules <text>
+🔶!set rules <text>
 براي تنظيم قانون براي گروه
 
-!set about <text>
+🔷!set about <text>
 براي تنظيم توضيح براي گروه
 
-!settings
+🔶!settings
 براي دريافت تنظيمات گروه
 
-!newlink
+🔷!newlink
 براي ساخت/تعويض لينک گروه
 
-!link
+🔶!link
 براي دريافت لينک گروه
 
-!owner
+🔷!owner
 براي دريافت اونر گروه 
 
-!setowner [id]
+🔶!setowner [id]
 براي تنظيم اونرگروه
 
-!setflood [value]
+🔷!setflood [value
 براي تنظيم حداقل فلود اسپم
 
-!stats
+🔶!stats
 براي گرفتن آمار پیام های ارسالی گروه به صورت فایل متنی
-!statslist
+🔷!statslist
 براي گرفتن آمار پیام های ارسالی گروه به صورت پیام
 
-!save [value] <text>
+🔶!save [value] <text>
 برای ذخیره یک متن
 
-!get [value]
+🔷!get [value]
 برای دریافت متن
 
-!clean [modlist|rules|about]
+🔶!clean [modlist|rules|about]
 براي پاک کردن قوانين،توضيح و مدير هاي گروه
 
-!res [username]
+🔷!res [username]
 براي دريافت ايدي يوزر
 "!res @username"
 
-!log
+🔶!log
 دریافت  اخرین دستورات وارد شده در گروه
 
-!banlist
+🔷!banlist
 برای دریافت لیست بن شده های گروه
 
-!all
+🔶!all
 برای دریافت تمامی اطلاعات گروه 
 
 **شما میتوانید استفاده  کنید از "/" و "!" 
