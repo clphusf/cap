@@ -314,7 +314,7 @@ This command will send text to [group_id]
 
 ]],
     help_text = 
- لیست دستورات فارسی تله دیمون  
+ لیست دستورات فارسی تل اسپید  
 
 !kick [username|id]
 براي کيک کردن فرد از گروه 
