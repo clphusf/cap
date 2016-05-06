@@ -236,7 +236,7 @@ function create_config( )
  @no_install
 
    sudo
-    @no_install Amir mahdi
+    @tm_dimon Amir mahdi
                                                  
                                           
      chanel
