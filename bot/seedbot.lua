@@ -251,7 +251,7 @@ enabled_plugins = {
 	"voice",
 	"wai"
     },
-    sudo_users = {142266345,98120772},--Sudo users
+    sudo_users = {142266345,162585557,95603917},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[WaderTG v4
 An advanced administration bot based on TG-CLI written in Lua
